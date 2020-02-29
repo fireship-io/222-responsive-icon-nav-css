@@ -35,7 +35,7 @@ main {
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
-  transition: width 200ms ease;
+  transition: width 600ms ease;
 }
 
 .navbar-nav {
@@ -111,7 +111,15 @@ main {
 
 .logo svg {
   transform: rotate(0deg);
-  transition: transform var(--transition-speed);
+  transition: var(--transition-speed);
+}
+
+.logo-text
+{
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
 }
 
 .navbar:hover .logo svg {
@@ -157,6 +165,16 @@ main {
 
   .navbar:hover .link-text {
     display: inline;
+  }
+
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
   }
 }
 
