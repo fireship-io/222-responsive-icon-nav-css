@@ -104,7 +104,6 @@ main {
   color: var(--text-secondary);
   background: var(--bg-secondary);
   font-size: 1.5rem;
-  text-transform: uppercase;
   letter-spacing: 0.3ch;
   width: 100%;
 }
