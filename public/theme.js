@@ -1,12 +1,15 @@
 const themeMap = {
-  dark: 'light',
-  light: 'solar',
-  solar: 'dark'
+  dark: "light",
+  light: "solar",
+  solar: "dark"
 };
 
-const theme = localStorage.getItem('theme');
+const theme = localStorage.getItem('theme')
+  || (tmp = Object.keys(themeMap)[0],
+      localStorage.setItem('theme', tmp),
+      tmp);
 const bodyClass = document.body.classList;
-theme && bodyClass.add(theme) || (bodyClass.add("dark"), localStorage.setItem('theme', "dark"));
+bodyClass.add(theme);
 
 function toggleTheme() {
   const current = localStorage.getItem('theme');
