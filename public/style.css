@@ -169,7 +169,7 @@ h1{
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 6%;
+    width: 80px;
     height: 100vh;
   }
 
