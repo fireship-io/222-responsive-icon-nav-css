@@ -16,20 +16,27 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.70rem;
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #d8d8d8;
+
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #1f1f1f;
 }
 
 main {
-  margin-left: 5rem;
-  padding: 1rem;
+  margin-left: 7%;
+  padding: 3rem;
+}
+
+h1{
+  font-family: 'Heebo';
+  font-weight: 700;
+  font-size: 2.7rem;
 }
 
 .navbar {
@@ -48,6 +55,7 @@ main {
   align-items: center;
   height: 100%;
 }
+
 
 .nav-item {
   width: 100%;
@@ -134,6 +142,12 @@ main {
     height: 5rem;
   }
 
+  .nav-link svg {
+    width: 1rem;
+    min-width: 1.6rem;
+    margin: 0 1.5rem;
+  }
+
   .logo {
     display: none;
   }
@@ -155,12 +169,16 @@ main {
 @media only screen and (min-width: 600px) {
   .navbar {
     top: 0;
-    width: 5rem;
+    width: 6%;
     height: 100vh;
   }
 
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .navbar:hover {
-    width: 16rem;
+    width: 18%;
   }
 
   .navbar:hover .link-text {
