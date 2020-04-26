@@ -162,10 +162,6 @@ main {
     width: 16rem;
   }
 
-  .navbar:hover .link-text {
-    display: inline;
-  }
-
   .navbar:hover .logo svg
   {
     margin-left: 11rem;
