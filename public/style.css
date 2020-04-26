@@ -36,7 +36,7 @@ main {
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
-  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .navbar-nav {
@@ -74,7 +74,6 @@ main {
 }
 
 .link-text {
-  display: none;
   margin-left: 1rem;
 }
 
@@ -161,10 +160,6 @@ main {
 
   .navbar:hover {
     width: 16rem;
-  }
-
-  .navbar:hover .link-text {
-    display: inline;
   }
 
   .navbar:hover .logo svg
