@@ -1,0 +1,21 @@
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    overflow: scroll;
+    height: 5rem;
+    min-width: 100vw;
+    overflow: scroll;
+  transition: width 600ms ease;
+  -webkit-transition: width 600ms ease;
+  -moz-transition: width 600ms ease;
+  -ms-transition: width 600ms ease;
+  -o-transition: width 600ms ease;
+}
+
+.nav-item:last-child{
+  margin-top: 0;
+}
+
+}
