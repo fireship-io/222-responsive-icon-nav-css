@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: var(--bg-secondary);
 }
 
 body::-webkit-scrollbar-thumb {
