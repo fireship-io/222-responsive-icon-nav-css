@@ -35,8 +35,7 @@ main {
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
-  transition: width 600ms ease;
-  overflow: scroll;
+  transition: width var(--transition-speed) ease;
 }
 
 .navbar-nav {
@@ -74,8 +73,11 @@ main {
 }
 
 .link-text {
-  display: none;
+  display: inline;
   margin-left: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity var(--transition-speed), visibility var(--transition-speed);
 }
 
 .nav-link svg {
@@ -146,6 +148,10 @@ main {
     justify-content: center;
   }
 
+  .link-text {
+    display: none;
+  }
+
   main {
     margin: 0;
   }
@@ -165,6 +171,8 @@ main {
 
   .navbar:hover .link-text {
     display: inline;
+    opacity: 1;
+    visibility: visible;
   }
 
   .navbar:hover .logo svg
