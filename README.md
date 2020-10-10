@@ -1,3 +1,3 @@
-# A Responsive & crwative Animated CSS Icon Navbar
+# A Responsive & creative Animated CSS Icon Navbar
 
 Watch the [Responsive CSS Navbar](https://youtu.be/biOMz4puGt8) episode on on youtube
