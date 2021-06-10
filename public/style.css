@@ -39,6 +39,18 @@ main {
   overflow: scroll;
 }
 
+.navbar::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.navbar::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.navbar::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
 .navbar-nav {
   list-style: none;
   padding: 0;
