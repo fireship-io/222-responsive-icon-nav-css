@@ -39,6 +39,10 @@ main {
   overflow: scroll;
 }
 
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
 .navbar-nav {
   list-style: none;
   padding: 0;
@@ -114,8 +118,7 @@ main {
   transition: var(--transition-speed);
 }
 
-.logo-text
-{
+.logo-text {
   display: inline;
   position: absolute;
   left: -999px;
@@ -167,13 +170,11 @@ main {
     display: inline;
   }
 
-  .navbar:hover .logo svg
-  {
+  .navbar:hover .logo svg {
     margin-left: 11rem;
   }
 
-  .navbar:hover .logo-text
-  {
+  .navbar:hover .logo-text {
     left: 0px;
   }
 }
